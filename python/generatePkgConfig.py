@@ -57,7 +57,7 @@ def main(oArgs):
 
         print(" Done!\nWriting libs...", end="")
 
-        oWriter.write("Libs:")
+        oWriter.write("Libs: -Wl,-no-undefined -Wl,--no-as-needed")
         vstrLibFiles = ["torch", "torch_cpu", "c10"]
         for strLibFile in vstrLibFiles:
             oWriter.write(" -L${lib_dir} -l%s" %(strLibFile))

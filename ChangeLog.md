@@ -7,6 +7,7 @@
 
 ### Fixed
 - Fixed the bug that the makefile cannot copy libtorch to `/opt`.
+- Fixed the bug that compiling code would fail using makefile because compiler need some flags in `.pc` file.
 
 ### Changed
 
